@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: shop-config
+  namespace: polyglot-shop
+data:
+  DB_USER: shopuser
+  DB_PASSWORD: shoppass
+  DB_HOST: postgres
+  DB_PORT: "5432"
+  DB_NAME: shopdb
+  REDIS_HOST: redis
+  REDIS_PORT: "6379"
+  JWT_SECRET: secret
